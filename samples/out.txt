@@ -1,0 +1,164 @@
+asteric 3* True
+asteric 4* True
+asteric 14* True
+asteric 15* True
+asteric 20* True
+asteric 21* True
+asteric image False
+end of main ['image', 'infinity']
+Error processing line: image	infinity
+
+Error: invalid literal for int() with base 10: 'image'
+['image', 'infinity']
+['image', 'infinity\n']
+Starting Aspherical section: aspheric data
+
+Aspherical section line: 3rd surface	
+
+Aspherical section line: K = 0.0 A 4 = 1.99678E-05	A 6 = -8.24417E-08 A 8 = -2.12200E-11
+
+readin surf no. 3 [0.0]
+conic parts ['K', '=', '0.0', 'A', '4', '=', '1.99678E-05', 'A', '6', '=', '-8.24417E-08', 'A', '8', '=', '-2.12200E-11']
+a_search [('4', '1.99678E-05'), ('6', '-8.24417E-08'), ('8', '-2.12200E-11')]
+parse_string 0.0 [0, 1.99678e-05, -8.24417e-08, -2.122e-11, 0, 0, 0, 0, 0, 0]
+Aspherical section line: 4th surface
+
+readin surf no. 3 [0, 1.99678e-05, -8.24417e-08, -2.122e-11, 0, 0, 0, 0, 0, 0]
+Aspherical section line: K =	0.0 A 4 = 1.73101E-05	A 6 = -1.05802E-07 A 8 = -1.53034E-10
+
+readin surf no. 4 []
+conic parts ['K', '=', '0.0', 'A', '4', '=', '1.73101E-05', 'A', '6', '=', '-1.05802E-07', 'A', '8', '=', '-1.53034E-10']
+a_search [('4', '1.73101E-05'), ('6', '-1.05802E-07'), ('8', '-1.53034E-10')]
+parse_string 0.0 [0, 1.73101e-05, -1.05802e-07, -1.53034e-10, 0, 0, 0, 0, 0, 0]
+Aspherical section line: 14th surface
+
+readin surf no. 4 [0, 1.73101e-05, -1.05802e-07, -1.53034e-10, 0, 0, 0, 0, 0, 0]
+Aspherical section line: K =	0.0 A 4 = -1.98288E-05 A 6 = 1.05587E-07 A 8 = 4.37228E-09
+
+readin surf no. 14 []
+conic parts ['K', '=', '0.0', 'A', '4', '=', '-1.98288E-05', 'A', '6', '=', '1.05587E-07', 'A', '8', '=', '4.37228E-09']
+a_search [('4', '-1.98288E-05'), ('6', '1.05587E-07'), ('8', '4.37228E-09')]
+parse_string 0.0 [0, -1.98288e-05, 1.05587e-07, 4.37228e-09, 0, 0, 0, 0, 0, 0]
+Aspherical section line: 15th surface
+
+readin surf no. 14 [0, -1.98288e-05, 1.05587e-07, 4.37228e-09, 0, 0, 0, 0, 0, 0]
+Aspherical section line: K =	0.0 A 4 = 3.67654E-05 A 6 = 1.03408E-07 A 8 = 4.94217E-09
+
+readin surf no. 15 []
+conic parts ['K', '=', '0.0', 'A', '4', '=', '3.67654E-05', 'A', '6', '=', '1.03408E-07', 'A', '8', '=', '4.94217E-09']
+a_search [('4', '3.67654E-05'), ('6', '1.03408E-07'), ('8', '4.94217E-09')]
+parse_string 0.0 [0, 3.67654e-05, 1.03408e-07, 4.94217e-09, 0, 0, 0, 0, 0, 0]
+Aspherical section line: 20th surface
+
+readin surf no. 15 [0, 3.67654e-05, 1.03408e-07, 4.94217e-09, 0, 0, 0, 0, 0, 0]
+Aspherical section line: K = 0.0 A 4 = -5.93134E-05 A 6 = -2.83344E-06 A 8 = 1.13683E-07 A 10 = -2.41213E-09 A 12 = 2.81858E-11 A 14 = -1.74792E-13 A 16 = 4.56347E-16
+
+readin surf no. 20 []
+conic parts ['K', '=', '0.0', 'A', '4', '=', '-5.93134E-05', 'A', '6', '=', '-2.83344E-06', 'A', '8', '=', '1.13683E-07', 'A', '10', '=', '-2.41213E-09', 'A', '12', '=', '2.81858E-11', 'A', '14', '=', '-1.74792E-13', 'A', '16', '=', '4.56347E-16']
+a_search [('4', '-5.93134E-05'), ('6', '-2.83344E-06'), ('8', '1.13683E-07'), ('10', '-2.41213E-09'), ('12', '2.81858E-11'), ('14', '-1.74792E-13'), ('16', '4.56347E-16')]
+parse_string 0.0 [0, -5.93134e-05, -2.83344e-06, 1.13683e-07, -2.41213e-09, 2.81858e-11, -1.74792e-13, 4.56347e-16, 0, 0]
+Aspherical section line: 21st surface
+
+readin surf no. 20 [0, -5.93134e-05, -2.83344e-06, 1.13683e-07, -2.41213e-09, 2.81858e-11, -1.74792e-13, 4.56347e-16, 0, 0]
+Aspherical section line: K = 0.0 A 4 = -3.19651E-05 A 6 = -2.14179E-06 A 8 = 7.43176E-08 A 10 = -1.36585e-09 A 12 = 1.38436E-11 A 14 = -7.40158E-14 A 16 = 1.64402E-16
+
+readin surf no. 21 []
+conic parts ['K', '=', '0.0', 'A', '4', '=', '-3.19651E-05', 'A', '6', '=', '-2.14179E-06', 'A', '8', '=', '7.43176E-08', 'A', '10', '=', '-1.36585e-09', 'A', '12', '=', '1.38436E-11', 'A', '14', '=', '-7.40158E-14', 'A', '16', '=', '1.64402E-16']
+a_search [('4', '-3.19651E-05'), ('6', '-2.14179E-06'), ('8', '7.43176E-08'), ('10', '-1.36585e-09'), ('12', '1.38436E-11'), ('14', '-7.40158E-14'), ('16', '1.64402E-16')]
+parse_string 0.0 [0, -3.19651e-05, -2.14179e-06, 7.43176e-08, -1.36585e-09, 1.38436e-11, -7.40158e-14, 1.64402e-16, 0, 0]
+Aspherical section line: Various Data
+
+readin surf no. 21 [0, -3.19651e-05, -2.14179e-06, 7.43176e-08, -1.36585e-09, 1.38436e-11, -7.40158e-14, 1.64402e-16, 0, 0]
+not Aspherical section line: Various Data
+
+readin surf no. 21 []
+ d for vari ['d6', '19.973', '10.326', '3.170']
+ d for vari ['d17', '8.661', '9.998', '11.938']
+ d for vari ['d21', '4.448', '10.367', '17.606']
+variable {6: [19.973, 10.326, 3.17], 17: [8.661, 9.998, 11.938], 21: [4.448, 10.367, 17.606]}
+variable {6: [19.973, 10.326, 3.17], 17: [8.661, 9.998, 11.938], 21: [4.448, 10.367, 17.606]}
+variable {6: [19.973, 10.326, 3.17], 17: [8.661, 9.998, 11.938], 21: [4.448, 10.367, 17.606]}
+finished reading txt
+1 {'r': 71.885, 'd': 1.2, 'nd': 1.6968, 'νd': 55.46, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 16.0} 
+
+2 {'r': 15.312, 'd': 7.8, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 12.0} 
+
+3 {'r': -298.152, 'd': 1.57, 'nd': 1.53048, 'νd': 55.72, 'type': 'EVENASPH', 'conic': 0.0, 'parm': [0, 1.99678e-05, -8.24417e-08, -2.122e-11, 0, 0, 0, 0, 0, 0], 'diam': 12.0} 
+
+4 {'r': 93.305, 'd': 1.78, 'nd': 1.00027717, 'νd': 89.3, 'type': 'EVENASPH', 'conic': 0.0, 'parm': [0, 1.73101e-05, -1.05802e-07, -1.53034e-10, 0, 0, 0, 0, 0, 0], 'diam': 12.0} 
+
+5 {'r': 26.391, 'd': 2.21, 'nd': 1.92286, 'νd': 20.88, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 11.5} 
+
+6 {'r': 37.81, 'd': 19.973, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 11.5} 
+
+7 {'r': 21.71, 'd': 2.23, 'nd': 1.497, 'νd': 81.61, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.5} 
+
+8 {'r': 383.239, 'd': 0.25, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.5} 
+
+9 {'r': 31.562, 'd': 3.16, 'nd': 1.497, 'νd': 81.61, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.0} 
+
+10 {'r': -20.356, 'd': 0.01, 'nd': 1.00000514, 'νd': 27.05, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.0} 
+
+11 {'r': -20.356, 'd': 0.89, 'nd': 1.70154, 'νd': 41.24, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.0} 
+
+12 {'r': 103.171, 'd': 1.36, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.0} 
+
+13 {'r': inf, 'd': 3.41, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.0} 
+
+14 {'r': 22.656, 'd': 4.2, 'nd': 1.58313, 'νd': 59.46, 'type': 'EVENASPH', 'conic': 0.0, 'parm': [0, -1.98288e-05, 1.05587e-07, 4.37228e-09, 0, 0, 0, 0, 0, 0], 'diam': 7.0} 
+
+15 {'r': -32.267, 'd': 2.51, 'nd': 1.00027717, 'νd': 89.3, 'type': 'EVENASPH', 'conic': 0.0, 'parm': [0, 3.67654e-05, 1.03408e-07, 4.94217e-09, 0, 0, 0, 0, 0, 0], 'diam': 7.0} 
+
+16 {'r': 21.017, 'd': 1.0, 'nd': 1.64769, 'νd': 33.84, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.0} 
+
+17 {'r': 11.988, 'd': 8.661, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 7.0} 
+
+18 {'r': -27.734, 'd': 0.9, 'nd': 1.83481, 'νd': 42.72, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 9.0} 
+
+19 {'r': -393.55, 'd': 1.85, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 10.0} 
+
+20 {'r': -135.797, 'd': 1.5, 'nd': 1.53048, 'νd': 55.72, 'type': 'EVENASPH', 'conic': 0.0, 'parm': [0, -5.93134e-05, -2.83344e-06, 1.13683e-07, -2.41213e-09, 2.81858e-11, -1.74792e-13, 4.56347e-16, 0, 0], 'diam': 10.0} 
+
+21 {'r': -189.242, 'd': 4.448, 'nd': 1.00027717, 'νd': 89.3, 'type': 'EVENASPH', 'conic': 0.0, 'parm': [], 'diam': 11.0} 
+
+22 {'r': -99.603, 'd': 4.89, 'nd': 1.64769, 'νd': 33.84, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 19.0} 
+
+23 {'r': -34.47, 'd': 9.9, 'nd': 1.00027717, 'νd': 89.3, 'type': 'STANDARD', 'conic': 0.0, 'parm': [0.0], 'diam': 19.0} 
+
+lens_params [{'num': 1, 'curv_L': 0.013911107606352759, 'curv_R': 0.06530825379196398, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.00027717, 'n_in': 1.6968, 'n_R': 1.0002772, 'diam_L': 32.0, 'diam_R': 24.0, 'xc': 0.0, 'thick': 1.2, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 2, 'curv_L': -0.0033539938453475975, 'curv_R': 0.0107175392179333, 'type_L': 'EVENASPH', 'type_R': 'EVENASPH', 'n_L': 1.0002772, 'n_in': 1.53048, 'n_R': 1.0002772, 'diam_L': 24.0, 'diam_R': 24.0, 'xc': 9.000000238418579, 'thick': 1.57, 'parm_L': array([ 0.00000e+00,  1.99678e-05, -8.24417e-08, -2.12200e-11,
+        0.00000e+00,  0.00000e+00,  0.00000e+00,  0.00000e+00,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'parm_R': array([ 0.00000e+00,  1.73101e-05, -1.05802e-07, -1.53034e-10,
+        0.00000e+00,  0.00000e+00,  0.00000e+00,  0.00000e+00,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 3, 'curv_L': 0.03789170443215889, 'curv_R': 0.02644802866117852, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.92286, 'n_R': 1.0002772, 'diam_L': 23.0, 'diam_R': 23.0, 'xc': 12.350000262260437, 'thick': 2.21, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 4, 'curv_L': 0.04606172465088754, 'curv_R': 0.0026093376830788654, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.497, 'n_R': 1.0002772, 'diam_L': 15.0, 'diam_R': 15.0, 'xc': 34.532999873161316, 'thick': 2.23, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 5, 'curv_L': 0.03168366996064318, 'curv_R': -0.04912556277135983, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.497, 'n_R': 1.0000051, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 37.0129998922348, 'thick': 3.16, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 6, 'curv_L': -0.04912556277135983, 'curv_R': 0.009692646412965808, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0000051, 'n_in': 1.70154, 'n_R': 1.0002772, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 40.18299997784197, 'thick': 0.89, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 7, 'curv_L': 0.0441384178115515, 'curv_R': -0.030991417019364906, 'type_L': 'EVENASPH', 'type_R': 'EVENASPH', 'n_L': 1.0002772, 'n_in': 1.58313, 'n_R': 1.0002772, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 45.84300006367266, 'thick': 4.2, 'parm_L': array([ 0.00000e+00, -1.98288e-05,  1.05587e-07,  4.37228e-09,
+        0.00000e+00,  0.00000e+00,  0.00000e+00,  0.00000e+00,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'parm_R': array([0.00000e+00, 3.67654e-05, 1.03408e-07, 4.94217e-09, 0.00000e+00,
+       0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00],
+      dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 8, 'curv_L': 0.04758052959802653, 'curv_R': 0.08341675066738508, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.64769, 'n_R': 1.0002772, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 52.552999863401055, 'thick': 1.0, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 9, 'curv_L': -0.036056826529133626, 'curv_R': -0.002540973271548063, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.83481, 'n_R': 1.0002772, 'diam_L': 18.0, 'diam_R': 20.0, 'xc': 62.214000115171075, 'thick': 0.9, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 10, 'curv_L': -0.007363933088168536, 'curv_R': -0.005284239105369031, 'type_L': 'EVENASPH', 'type_R': 'EVENASPH', 'n_L': 1.0002772, 'n_in': 1.53048, 'n_R': 1.0002772, 'diam_L': 20.0, 'diam_R': 22.0, 'xc': 64.96400011517107, 'thick': 1.5, 'parm_L': array([ 0.00000e+00, -5.93134e-05, -2.83344e-06,  1.13683e-07,
+       -2.41213e-09,  2.81858e-11, -1.74792e-13,  4.56347e-16,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'parm_R': array([], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 11, 'curv_L': -0.01003985855711962, 'curv_R': -0.029010732944198075, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.64769, 'n_R': 1.0002772, 'diam_L': 38.0, 'diam_R': 38.0, 'xc': 70.91200006939471, 'thick': 4.89, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}]
+last lens {'num': 10, 'curv_L': -0.007363933088168536, 'curv_R': -0.005284239105369031, 'type_L': 'EVENASPH', 'type_R': 'EVENASPH', 'n_L': 1.0002772, 'n_in': 1.53048, 'n_R': 1.0002772, 'diam_L': 20.0, 'diam_R': 22.0, 'xc': 64.96400011517107, 'thick': 1.5, 'parm_L': array([ 0.00000e+00, -5.93134e-05, -2.83344e-06,  1.13683e-07,
+       -2.41213e-09,  2.81858e-11, -1.74792e-13,  4.56347e-16,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'parm_R': array([], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}
+num of elements 11
+[{'num': 1, 'curv_L': 0.013911107606352759, 'curv_R': 0.06530825379196398, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.00027717, 'n_in': 1.6968, 'n_R': 1.0002772, 'diam_L': 32.0, 'diam_R': 24.0, 'xc': 0.0, 'thick': 1.2, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 2, 'curv_L': -0.0033539938453475975, 'curv_R': 0.0107175392179333, 'type_L': 'EVENASPH', 'type_R': 'EVENASPH', 'n_L': 1.0002772, 'n_in': 1.53048, 'n_R': 1.0002772, 'diam_L': 24.0, 'diam_R': 24.0, 'xc': 9.000000238418579, 'thick': 1.57, 'parm_L': array([ 0.00000e+00,  1.99678e-05, -8.24417e-08, -2.12200e-11,
+        0.00000e+00,  0.00000e+00,  0.00000e+00,  0.00000e+00,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'parm_R': array([ 0.00000e+00,  1.73101e-05, -1.05802e-07, -1.53034e-10,
+        0.00000e+00,  0.00000e+00,  0.00000e+00,  0.00000e+00,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 3, 'curv_L': 0.03789170443215889, 'curv_R': 0.02644802866117852, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.92286, 'n_R': 1.0002772, 'diam_L': 23.0, 'diam_R': 23.0, 'xc': 12.350000262260437, 'thick': 2.21, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 4, 'curv_L': 0.04606172465088754, 'curv_R': 0.0026093376830788654, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.497, 'n_R': 1.0002772, 'diam_L': 15.0, 'diam_R': 15.0, 'xc': 34.532999873161316, 'thick': 2.23, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 5, 'curv_L': 0.03168366996064318, 'curv_R': -0.04912556277135983, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.497, 'n_R': 1.514, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 37.0129998922348, 'thick': 3.16, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 6, 'curv_L': -0.04912556277135983, 'curv_R': 0.009692646412965808, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.514, 'n_in': 1.70154, 'n_R': 1.0002772, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 40.18299997784197, 'thick': 0.89, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 7, 'curv_L': 0.0441384178115515, 'curv_R': -0.030991417019364906, 'type_L': 'EVENASPH', 'type_R': 'EVENASPH', 'n_L': 1.0002772, 'n_in': 1.58313, 'n_R': 1.0002772, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 45.84300006367266, 'thick': 4.2, 'parm_L': array([ 0.00000e+00, -1.98288e-05,  1.05587e-07,  4.37228e-09,
+        0.00000e+00,  0.00000e+00,  0.00000e+00,  0.00000e+00,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'parm_R': array([0.00000e+00, 3.67654e-05, 1.03408e-07, 4.94217e-09, 0.00000e+00,
+       0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00],
+      dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 8, 'curv_L': 0.04758052959802653, 'curv_R': 0.08341675066738508, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.64769, 'n_R': 1.0002772, 'diam_L': 14.0, 'diam_R': 14.0, 'xc': 52.552999863401055, 'thick': 1.0, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 9, 'curv_L': -0.036056826529133626, 'curv_R': -0.002540973271548063, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.83481, 'n_R': 1.0002772, 'diam_L': 18.0, 'diam_R': 20.0, 'xc': 62.214000115171075, 'thick': 0.9, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 10, 'curv_L': -0.007363933088168536, 'curv_R': -0.005284239105369031, 'type_L': 'EVENASPH', 'type_R': 'EVENASPH', 'n_L': 1.0002772, 'n_in': 1.53048, 'n_R': 1.0002772, 'diam_L': 20.0, 'diam_R': 22.0, 'xc': 64.96400011517107, 'thick': 1.5, 'parm_L': array([ 0.00000e+00, -5.93134e-05, -2.83344e-06,  1.13683e-07,
+       -2.41213e-09,  2.81858e-11, -1.74792e-13,  4.56347e-16,
+        0.00000e+00,  0.00000e+00], dtype=float32), 'parm_R': array([], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}, {'num': 11, 'curv_L': -0.01003985855711962, 'curv_R': -0.029010732944198075, 'type_L': 'STANDARD', 'type_R': 'STANDARD', 'n_L': 1.0002772, 'n_in': 1.64769, 'n_R': 1.0002772, 'diam_L': 38.0, 'diam_R': 38.0, 'xc': 70.91200006939471, 'thick': 4.89, 'parm_L': array([0.], dtype=float32), 'parm_R': array([0.], dtype=float32), 'conic_L': 0.0, 'conic_R': 0.0}]
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 10
+10 11
