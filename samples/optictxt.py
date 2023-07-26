@@ -5,7 +5,7 @@ def parse_string(s):
     conic = 0
     parms = [0]*10  # Initialize list with zeros
 
-    k_search = re.search(r"K\s*=\s*([-\d\.e+]+)", s)
+    k_search = re.search(r"K\s*=\s*([-−\d\.eE+]+)", s)
     if k_search:
         conic = float(k_search.group(1))
 
@@ -87,6 +87,7 @@ def parse_optical_file(file_path,loc=0):
                 nd = float(parts[idx_nd].replace('−', '-')) if len(parts) > 3 else 1.0
                 νd = float(parts[idx_vd].replace('−', '-')) if len(parts) > 4 else None
                 if withdiam:
+                    print('withdiam',idx_diam)
                     diam = float(parts[idx_diam].replace('−', '-'))
                 if withrad:
                     diam = 2*float(parts[idx_rad].replace('−', '-')) if len(parts) > 5+withgf+withdgf else 5.0
@@ -144,6 +145,7 @@ def parse_optical_file(file_path,loc=0):
             # If this line does not start with 'K', 'A+number', or 'number+"th"/st/nd', it marks the end of the aspherical data section
             parts = line.split()  # Split by spaces instead of tabs
             if aspherical_surface_no:
+                print('aspherical_surface_no',aspherical_surface_no)
                 optical_data[aspherical_surface_no]['conic'] = conic
                 optical_data[aspherical_surface_no]['parm'] = aspherical_parms
                 print('readin surf no.',aspherical_surface_no,conic,aspherical_parms)

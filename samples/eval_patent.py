@@ -17,15 +17,16 @@ filename='z2450airdiam.txt'
 #filename='Nikkor856eairdiam.txt'
 filename='z5018_9airdiam.txt'
 filename='z58noct_1airdiam.txt'
+filename='sony1224GMair.txt'
 ###### incident rays #####
 Nray=5
 raywidth=0.7
-x0=-320
-h0=-21.5/70.*x0
-x_in=65
-hray=63
+x0=-320e4
+h0=-21.5/19.*x0
+x_in=27
+hray=16/2.8
 dimfac=0.8
-ray_end=179.36
+ray_end=0 #179.36
 #### evaluation #####
 evaluate=False
 Neval=50
@@ -121,6 +122,9 @@ data = optictxt.parse_optical_file(filename,loc=location)
 for i in range(1,len(data)+1):
   print(i,data[i],'\n')
 lens_params=convertpar(data)
+lens_params[-1]['xc']+=0.08
+if not ray_end:
+    ray_end=lens_params[-1]['xc']+lens_params[-1]['thick']+1.
 #lens_params=readzmx_asph("mobile-iPhone_USP20170299845.zmx")
 #lens_params=readzmx_asph("DoubleGauss_Wakiyama_USP4448497.zmx")
 print('lens_params',lens_params)
@@ -130,7 +134,7 @@ print('lens_params',lens_params)
 for i in range(0*len(lens_params)):
   print(i,lens_params[i]['n_L'],lens_params[i]['n_in'],lens_params[i]['n_R'],'curv',lens_params[i]['curv_L'],lens_params[i]['curv_R'],'pos',lens_params[i]['xc'],lens_params[i]['thick'])
 #lens_params[-2]['parm_L']= [0.0,-5.93134E-05,-2.83344E-06,1.13683E-7,-2.41213E-09,2.81858E-11,-1.74792E-13,4.56347E-16]
-print('last lens',lens_params[-2])
+#print('last lens',lens_params[-2])
 lens=lensnew(lens_params)
 
 fig=plt.figure(figsize=(14,8.))
