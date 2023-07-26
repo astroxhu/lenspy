@@ -8,28 +8,32 @@ import numpy as np
 import optictxt
 digtype=np.float32
 
-filename='rf100300airdiam.txt'
+#filename='rf100300airdiam.txt'
 #filename='rf150_2airdiam.txt'
-#filename='z2450airdiam.txt'
-filename='ef640_3jpair.txt'
-filename='ef640_4ajpairdiam.txt'
-filename='Nikkor640eairdiam.txt'
-filename='Nikkor856eairdiam.txt'
+filename='z2450airdiam.txt'
+#filename='ef640_3jpair.txt'
+#filename='ef640_4ajpairdiam.txt'
+#filename='Nikkor640eairdiam.txt'
+#filename='Nikkor856eairdiam.txt'
+filename='z5018_9airdiam.txt'
+filename='z58noct_1airdiam.txt'
 ###### incident rays #####
 Nray=5
 raywidth=0.7
-x0=-1e7
-h0=-21.5/800.*x0
-x_in=900
-hray=80
-ray_end=501.6
+x0=-320
+h0=-21.5/70.*x0
+x_in=65
+hray=63
+dimfac=0.8
+ray_end=179.36
 #### evaluation #####
 evaluate=False
 Neval=50
 weval=2.0
 #### element location ####
-location=0
+location=1
 lenslw=1.
+lenscolor='k'
 def getpsf(raylist,xfocus,N=100,width=1.0):
   Nray=len(raylist)
   yarr=np.zeros(Nray)
@@ -139,7 +143,7 @@ ax1.set_aspect('equal')
 #ax1.set_ylim(-4,4)
 ax1.set_xlim(-25,400)
 ax1.set_ylim(-80,80)
-ax1.set_xlim(-25,lens_params[-1]['xc']*1.4)
+ax1.set_xlim(-25,lens_params[-1]['xc']*1.3)
 ax1.set_ylim(-lens_params[0]['diam_L']/1.5,lens_params[0]['diam_L']/1.5)
 #ax1.set_xlim(39.3,39.34)
 #ax1.set_ylim(5.85,5.88)
@@ -147,9 +151,9 @@ ax1.set_ylim(-lens_params[0]['diam_L']/1.5,lens_params[0]['diam_L']/1.5)
 Ray1=[ray2d(0,0,0,0,0,color='C1') for i in range(Nray)]
 Ray2=[ray2d(0,0,0,0,0,color='C2') for i in range(Nray)]
 Ray3=[ray2d(0,0,0,0,0,color='C3') for i in range(Nray)]
-Ray1=gen_optics().ray_in(x0,-h0,x_in,hray,Ray1)
+Ray1=gen_optics().ray_in(x0,-h0,x_in,hray*dimfac*dimfac,Ray1)
 Ray2=gen_optics().ray_in(x0,0.*h0,x_in,hray,Ray2)
-Ray3=gen_optics().ray_in(x0,-0.5*h0,x_in,hray,Ray3)
+Ray3=gen_optics().ray_in(x0,-0.5*h0,x_in,hray*dimfac,Ray3)
 #print('lenRay',len(Ray))
 #Ray[:Nray]=gen_optics().ray_in(x0,-h0,x_in,hray,Ray[:Nray])
 #Ray[Nray:2*Nray]=gen_optics().ray_in(x0,0*h0,x_in,hray,Ray[Nray:2*Nray])
@@ -157,11 +161,12 @@ Ray3=gen_optics().ray_in(x0,-0.5*h0,x_in,hray,Ray3)
 #Ray=gen_optics().ray_in(x0,h0,1,1,Ray)
 
 
-lens.assemble(ax1,lw=lenslw,lenscolor='k')
+lens.assemble(ax1,lw=lenslw,lenscolor=lenscolor)
 [rayout,rayout1]=lens.raytrace(ax1,Ray1,raywidth=raywidth,rayend=ray_end)
 [rayout,rayout1]=lens.raytrace(ax1,Ray3,raywidth=raywidth,rayend=ray_end)
 [rayout,rayout1]=lens.raytrace(ax1,Ray2,raywidth=raywidth,rayend=ray_end)
 
+ax1.vlines(ray_end,-25,25,colors=lenscolor,lw=lenslw)
 #print('rayout',rayout[0].xs,rayout[0].xe)
 #[xfocus,ymax,ymin]=lens.findfocus(rayout,step=2,x0=150,x1=175.)
 ydist=np.zeros(Nray)

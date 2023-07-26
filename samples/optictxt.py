@@ -96,6 +96,8 @@ def parse_optical_file(file_path,loc=0):
                 # Set the type of the surface
                 if '*' in parts[0]:
                     surface_type = 'EVENASPH'
+                    conic = 0.0
+                    aspherical_parms = [0.0]
                 else:
                     surface_type = 'STANDARD'
                     conic = 0.0
@@ -144,7 +146,7 @@ def parse_optical_file(file_path,loc=0):
             if aspherical_surface_no:
                 optical_data[aspherical_surface_no]['conic'] = conic
                 optical_data[aspherical_surface_no]['parm'] = aspherical_parms
-                print('readin surf no.',aspherical_surface_no,aspherical_parms)
+                print('readin surf no.',aspherical_surface_no,conic,aspherical_parms)
                 #aspherical_parms = []
             if not (parts[0].strip().startswith('K') or parts[0].strip().startswith('A') or parts[0].strip()[0].isdigit()):
                 print(f"not Aspherical section line: {line}")
@@ -178,13 +180,13 @@ def parse_optical_file(file_path,loc=0):
                 continue
 
         # Check if this line starts the aspherical data section
-        if "ASPHERIC DATA" in line.upper():
+        if "ASPHERIC DATA" in line.upper() or "ASPHERICAL DATA" in line.upper():
             in_aspherical_section = True
             print(f"Starting Aspherical section: {line}")
             continue
 
         # Check if this line contains variable surface locations
-        if parts[0].startswith("d"):
+        if parts[0].lower().startswith("d"):
             print(' d for vari',parts)
             variable_surface_no = int(parts[0][1:])  # Extract the surface number
             variable_surface_locations[variable_surface_no] = [float(p.replace('−', '-')) for p in parts[1:] if p.strip()]  # Extract the location data
