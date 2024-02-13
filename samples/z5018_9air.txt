@@ -1,0 +1,65 @@
+(Table 9)
+[Overall specifications]
+f 51.60
+FNO 1.85
+ω 22.9
+Y 21.70
+TL 92.330
+BF 13.100
+BFa 12.554
+[Lens specifications]
+Surface number r d nd νd
+1	-48.06457	2.000	1.67270	32.2
+2	50.03333	2.861	1.94595	18.0
+3	105.00000	2.805	1.00027717	89.3
+4	-226.31231	6.827	1.72916	54.6
+5	-47.98013	0.644	1.00027717	89.3
+6*	36.64910	0.100	1.56093	36.6
+7	36.85687	5.622	1.80	400	46.6
+8	217.92780	0.200	1.00027717	89.3
+9	28.49361	7.332	1.59319	67.9
+10	-161.37986	1.500	1.64769	33.7
+11	20.99038	5.164	1.00027717	89.3
+12	∞	(variable)	1.00027717	89.3
+13	∞	2.700	1.00027717	89.3
+14	-23.41799	1.100	1.64769	33.7
+15	998.77224	0.200	1.00027717	89.3
+16	*	85.12299	5.000	1.77377	47.2
+17	*	-35.29338	2.485	89.3
+18	-73.80381	6.400	1.49782	82.6
+19	-23.23519	(variable)	1.00027717	89.3
+20	-177.75440	2.927	1.94595	18.0
+21	-63.69645	1.900	1.64769	33.7
+22	-482.01125	2.887	1.00027717	89.3
+23	-50.20764	1.900	1.64769	33.7
+24	∞	10.500	1.00027717	89.3
+25	∞	1.600	1.51680	64.1
+26	∞	(variable)	1.00027717	89.3
+[Aspherical data]
+6th	surface
+K = 1.00000 A 4 = -4.74106E-07 A 6 = -3.40824E-10 A 8 = 2.15394E-12 A10 = -1.54492E-15
+16th	surface
+K = 1.00000 A 4 = -1.95205E-07 A 6 = 1.94342E-08 A 8 = -8.61846E-11 A 10 = -2.07763E-13
+Surface 17 
+K = 1.00000 A 4 = 1.47643E-05 A 6 = 2.08671E-08 A 8 = 8.44852E-11 A 10 = -6.93210E-13
+Variable data
+Infinite focusing state Short focusing state f = 51.60 β = -0.1565
+D12 10.320 2.409
+D19 6.356 14.267
+D26 1.000 1.000
+[Lens group data]
+Group Start surface Focal length G1 1 73.63
+G2 13 48.76
+G3 20 -81.76
+[Conditional expression values]
+Conditional expression (1) FNO × (f1 / f) = 2.645
+Conditional expression (2) TLa / f = 1.777
+Conditional expression (3) f2 / (− f3) = 0.596
+Conditional expression (4) f / f2 = 1.058
+Conditional expression (5) f1 / f2 = 1.510
+Conditional expression (6) BFa / f = 0.243
+Conditional expression (7) fF / fR = 0.748
+Conditional expression (8) TLa / (− f3) = 1.123
+Conditional expression (9) TLa / f1 = 1.247
+Conditional expression (10) 2ω = 45.8
+https://patents.google.com/patent/WO2019220618A1/en

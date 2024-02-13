@@ -1,0 +1,80 @@
+(Table 1) First Example (Basic Specifications)
+f 51.29
+FNo 1.23
+ω 22.8
+Y 21.60
+TL 163.307
+BF 13.112
+BF (air equivalent length) 12.567
+
+(Surface data)
+Surface number r d nd νd Equation (7) (8) (15)
+0 (paraboloid) ∞ (variable)
+1 280.68270 2.650 1.64000 60.1
+2 46.02198 3.540 r1
+3 50.87481 4.190 1.94595 18.0
+4 62.23366 16.510
+5 -43.98849 3.200 1.55298 55.1 r2
+6 -158.30791 4.050
+7 -82.01412 6.700 1.59349 67.0
+8-52.72274 -3.000
+9 0.00000 3.100
+10 113.04472 10.810 1.59349 67.0
+11 -113.04472 0.200
+12 75.49059 6.540 1.59349 67.0
+13 275.33026 0.200
+14 48.85546 10.350 1.59349 67.0
+15 571.46325 0.680
+16 290.13527 6.040 1.59319 67.9
+17 -109.11000 2.160 1.73800 32.3
+18 40.04126 7.790
+19 (Aperture) ∞ (Variable)
+20 -37.07012 1.700 1.72047 34.7
+21 -95.03209 0.200
+22 58.85968 6.200 1.59319 67.9
+23 0.00000 (variable)
+24 391.60810 6.460 1.59306 67.0
+25 * -165.00000 2.600
+26 * 71.00000 4.000 1.76450 49.1
+27 -430.72555 (variable)
+28 137.78125 3.100 1.61800 63.3
+29 795.36428 0.100
+30 87.92389 5.700 1.90265 35.8
+31 -127.68000 1.800 1.61266 44.5
+32 40.89766 7.760
+33 * -64.58764 1.800 1.51680 64.0
+34 423.87378 10.810
+35 0.00000 1.600 1.51680 63.9
+36 0.00000 BF
+Image plane ∞
+
+Aspherical data
+25th Surface κ A4 A6 A8 A10
+25 1.52295e + 01 -2.31391e-05 7.84797e-08 -2.22440e-10 4.85260e-13
+A12 A14 A16
+-7.08430e-16 6.01460e-19 -2.27720e-22
+Surface κ A4 A6 A8 A10
+26 -1.15900e-01 -2.10400e-05 5.52111e-08 -1.44760e-10 2.04610e-13
+A12 A14 A16
+1.63620e-16 -1.08770e-18 1.17040e-21
+Surface κ A4 A6 A8 A10
+33 9.47940e + 00 9.45827e-07 1.06743e-08 -3.94910e-11 1.67840e-13
+A12 A14 A16
+-4.43900e-16 6.53730e-19 0.00000e + 00
+
+(Focal length of lens group)
+Lens group Start surface End surface Focal length A 1 18 114.58
+F1 20 23 -707.60
+F2 24 27 57.73
+R 28 34 -157.33
+
+(Variable interval data)
+Close to infinity
+d0 ∞ 467.50
+Magnification --- 0.1000
+f 51.29-
+d19 19.164 11.437
+d23 2.000 3.584
+d27 1.900 8.043
+d36 0.702 0.701
+2 and 3 are aberration diagrams of the optical system according to the first embodiment at infinity focusing and short-distance focusing, respectively, and various aberrations are satisfactorily corrected to provide excellent imaging performance. You can see that it has.

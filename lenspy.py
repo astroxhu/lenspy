@@ -886,7 +886,13 @@ class lensnew():
           plotin=True
         else:
           plotin=False
-        self.lensarr[i].plotallray(ax,200,lw=raywidth,plotin=plotin,color_in=Ray[j].color,color_out=Ray[j].color)
+        if Nray > 20:
+          raystep = Nray//3
+          #raystep = 1
+          if j % raystep == 0:# or j == Nray-1:
+            self.lensarr[i].plotallray(ax,200,lw=raywidth,plotin=plotin,color_in=Ray[j].color,color_out=Ray[j].color)
+        else:
+            self.lensarr[i].plotallray(ax,200,lw=raywidth,plotin=plotin,color_in=Ray[j].color,color_out=Ray[j].color)
     return [rayout,rayout1]
 
 

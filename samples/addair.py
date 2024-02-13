@@ -24,7 +24,7 @@ def fill_empty_nd_vd(input_file_path, output_file_path):
     # Iterate over each line in the content
     for line in content:
         # If the line starts with a number (optionally followed by a '*'), it's a data line
-        parts = line.split()
+        parts = line.lstrip().split()
         if len(parts)>1 and parts[0].strip().lower() == 'surface' and ( parts[1].strip().lower() == 'number' or parts[1].strip().lower() == 'no.'):
             print(parts)
             
@@ -40,14 +40,17 @@ def fill_empty_nd_vd(input_file_path, output_file_path):
             idx_r = parts.index('r') + offset
             idx_d = parts.index('d') + offset
             idx_nd = parts.index('nd') + offset
-            idx_vd = parts.index('νd') + offset
+            if 'νd' in line:
+                idx_vd = parts.index('νd') + offset
+            else:
+                idx_vd = parts.index('vd') + offset
               
         if re.match(r'^\d+\*?', line.strip()):
             processing_data = True
 
             # Split the line into parts
             #parts = line.split('\t')
-            parts = line.split()
+            parts = line.lstrip().split()
             print (parts)
             # Check the length of parts
             if len(parts) == 3+withdiam:
@@ -80,7 +83,7 @@ def fill_empty_nd_vd(input_file_path, output_file_path):
                 # If we were processing data and we encounter a line that doesn't start with a number, stop processing
                 processing_data = False
 
-            new_content.append(line)
+            new_content.append(line.lstrip())
 
     # Write the new content to the output file
     with open(output_file_path, "w") as file:

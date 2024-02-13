@@ -21,6 +21,15 @@ def parse_string(s):
 
     return conic, parms
 
+def distance_pattern(s):
+    # If the string matches the pattern 'variable' or '(variable)'
+    if re.fullmatch(r'\(?\bvariable\b\)?', s):
+        return True
+    # If the string matches the pattern 'dx' or '(dx)', where x is an integer
+    elif re.fullmatch(r'\(?\bd\d+\b\)?', s):
+        return True
+    else:
+        return False
 def parse_optical_file(file_path,loc=0):
     # Start by reading the file
     withgf=0
@@ -77,7 +86,11 @@ def parse_optical_file(file_path,loc=0):
                 r = float(parts[idx_r].replace('−', '-').replace('∞', 'inf'))  # Replace Unicode minus sign and infinity sign
 
                 # For 'd', check if it's 'variable' and if so, set to None and store the surface number for later processing
-                if parts[idx_d].strip().lower() == '(variable)':
+                #if parts[idx_d].strip().lower() == '(variable)':
+                if distance_pattern(parts[idx_d].strip().lower()):
+                    d = None
+                    variable_surfaces.append(surface_no)
+                elif parts[idx_d].strip().lower() == 'bf' or parts[idx_d].strip().lower() == '(bf)':
                     d = None
                     variable_surfaces.append(surface_no)
                 else:
@@ -135,7 +148,11 @@ def parse_optical_file(file_path,loc=0):
             idx_r = parts.index('r') + offset
             idx_d = parts.index('d') + offset
             idx_nd = parts.index('nd') + offset
-            idx_vd = parts.index('νd') + offset
+            if 'νd' in line:
+                idx_vd = parts.index('νd') + offset
+            else:
+                idx_vd = parts.index('vd') + offset
+
 
             continue
 
@@ -193,7 +210,10 @@ def parse_optical_file(file_path,loc=0):
             variable_surface_no = int(parts[0][1:])  # Extract the surface number
             variable_surface_locations[variable_surface_no] = [float(p.replace('−', '-')) for p in parts[1:] if p.strip()]  # Extract the location data
             continue
-
+        elif parts[0].lower() == 'bf':
+            print('bf',parts)
+            variable_surface_no = max(variable_surfaces)
+            variable_surface_locations[variable_surface_no] = [float(p.replace('−', '-')) for p in parts[1:] if p.strip()]
     # Process variable surfaces
     for surface_no in variable_surfaces:
         print('variable', variable_surface_locations,surface_no)

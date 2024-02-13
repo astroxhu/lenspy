@@ -46,8 +46,8 @@ Fno	0.98
 2ω	39.96
 Ymax	21.70
 TL	160.74
-BF	17.10
-BF (Air	16.55
+#BF	17.10
+BF 	16.55
 converted	
 length)
 Infinite	Close Distance
